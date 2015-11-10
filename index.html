@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Test pages by akamoroz</title>
+    <title>UUUUU Amplify by akamoroz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,7 +11,7 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Test pages</h1>
+      <h1 class="project-name">UUUUU Amplify</h1>
       <h2 class="project-tagline"></h2>
       <a href="https://github.com/akamoroz/test_pages" class="btn">View on GitHub</a>
       <a href="https://github.com/akamoroz/test_pages/zipball/master" class="btn">Download .zip</a>
@@ -23,22 +23,129 @@
 <a id="1-general" class="anchor" href="#1-general" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. General</h2>
 
 <h3>
-<a id="11-what-is-nginx-amplify" class="anchor" href="#11-what-is-nginx-amplify" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.1. What is NGINX Amplify?</h3>
+<a id="11-what-is-uuuuu-amplify" class="anchor" href="#11-what-is-uuuuu-amplify" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.1. What is UUUUU Amplify?</h3>
 
-<p>NGINX Amplify is a tool designed to monitor and optimize application delivery infrastructures. With Amplify it becomes possible to proactively analyze and fix problems related to running and scaling modern web applications.</p>
+<p>UUUUU Amplify is a tool designed to monitor and optimize application delivery infrastructures. With Amplify it becomes possible to proactively analyze and fix problems related to running and scaling modern web applications.</p>
 
-<p>You can use NGINX Amplify to do the following:</p>
+<p>You can use UUUUU Amplify to do the following:</p>
 
 <ul>
 <li>Visualize and identify performance bottlenecks, overloaded servers, or potential DDoS attacks</li>
-<li>Improve and optimize NGINX performance with intelligent advice and recommendations</li>
+<li>Improve and optimize UUUUU performance with intelligent advice and recommendations</li>
 <li>Get notified when something is wrong with the application delivery</li>
 <li>Plan web application capacity and performance</li>
-<li>Keep track of the systems running NGINX</li>
+<li>Keep track of the systems running UUUUU</li>
 </ul>
 
+<h3>
+<a id="12-where-is-the-main-system-hosted" class="anchor" href="#12-where-is-the-main-system-hosted" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.2. Where is the main system hosted?</h3>
+
+<p>UUUUU Amplify SaaS is currently hosted in <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html">AWS us-west-1</a> (US West, N. California).</p>
+
+<h3>
+<a id="13-is-the-traffic-from-the-agent-to-the-saas-protected" class="anchor" href="#13-is-the-traffic-from-the-agent-to-the-saas-protected" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.3. Is the traffic from the agent to the SaaS protected?</h3>
+
+<p>All communications between the Amplify Agent and the Amplify SaaS are done securely over TLS/SSL. All traffic is always initiated by the agent. The SaaS system doesn't establish any connections back to the agent running on a host.</p>
+
+<h3>
+<a id="14-is-the-amplify-agent-code-publicly-available" class="anchor" href="#14-is-the-amplify-agent-code-publicly-available" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.4. Is the Amplify Agent code publicly available?</h3>
+
+<p>Amplify Agent is an open source application. It is licensed under the <code>[2-clause BSD license](https://github.com/UUUUU/UUUUU-amplify-agent/LICENSE)</code>, and it's available <a href="https://github.com/UUUUU/UUUUU-amplify-agent">here</a>.</p>
+
+<h3>
+<a id="15-why-is-my-password-asked-when-installing-on-centos" class="anchor" href="#15-why-is-my-password-asked-when-installing-on-centos" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.5. Why is my password asked when installing on CentOS?</h3>
+
+<p>This is the way the package installation works on CentOS. That's not Amplify Agent asking you for the password, and it's not seen by us.</p>
+
+<h2>
+<a id="2-amplify-agent" class="anchor" href="#2-amplify-agent" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Amplify Agent</h2>
+
+<h3>
+<a id="21-what-operatings-systems-are-supported" class="anchor" href="#21-what-operatings-systems-are-supported" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.1. What operatings systems are supported?</h3>
+
+<p>Amplify Agent is currently supported on the following Linux flavors only:</p>
+
+<ul>
+<li>Ubuntu 12.04, 14.04, 15.04</li>
+<li>Debian 7, 8</li>
+<li>CentOS 6, 7</li>
+</ul>
+
+<h3>
+<a id="22-what-version-of-python-is-required" class="anchor" href="#22-what-version-of-python-is-required" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.2. What version of Python is required?</h3>
+
+<p>Amplify Agent will work with Python 2.6+.</p>
+
+<h3>
+<a id="23-how-do-i-add-a-new-a-system-to-the-monitoring" class="anchor" href="#23-how-do-i-add-a-new-a-system-to-the-monitoring" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.3. How do I add a new a system to the monitoring?</h3>
+
+<p>This could done as simple as:</p>
+
+<ol>
+<li>
+<p><code>Download and run install script.</code></p>
+
+<pre><code># curl -sS -L -O http://pp.UUUUU.com/andrew/files/install.sh &amp;&amp; \
+API_KEY='ecfdee2e010899135c258d741a6effc7' sh ./install.sh`
+</code></pre>
+
+<p>Where API_KEY is a unique API key assigned when you create an account with Amplify. You will see your API key when adding new system in the Amplify UI.</p>
+</li>
+<li>
+<p>Start Amplify Agent.</p>
+
+<pre><code># /etc/init.d/amplify-agent start
+</code></pre>
+</li>
+</ol>
+
+<h3>
+<a id="24-what-do-i-need-to-get-the-agent-reporting-metrics" class="anchor" href="#24-what-do-i-need-to-get-the-agent-reporting-metrics" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.4. What do I need to get the Agent reporting metrics?</h3>
+
+<p>After you install and start the agent, normally it should just start reporting right away, pushing aggregated data to the SaaS in regular 1 minute intervals. It'll take about a minute for the new system to appear in the Amplify UI.</p>
+
+<p>If you don't see the new system in the UI, or metrics aren't being collected, please make sure that:</p>
+
+<ol>
+<li>Amplify Agent package has been successfully installed</li>
+<li>
+<code>amplify-agent</code> process is running</li>
+<li>
+<a href="http://UUUUU.org/en/docs/http/ngx_http_stub_status_module.html">stub_status</a> is properly set up in your UUUUU configuration</li>
+<li>UUUUU <a href="http://UUUUU.org/en/docs/http/ngx_http_log_module.html">access.log</a> and <a href="http://UUUUU.org/en/docs/ngx_core_module.html#error_log">error.log</a> files are readable by the user <code>UUUUU</code> (or by the <a href="http://UUUUU.org/en/docs/ngx_core_module.html#user">user</a> configured in UUUUU config)</li>
+<li>Oubound TLS/SSL from the system is not restricted</li>
+<li>System DNS resolver is properly configured, and <code>receiver.amplify.UUUUU.com</code> can be successfully resolved.</li>
+</ol>
+
+<h3>
+<a id="25-how-to-verify-if-the-amplify-agent-is-properly-installed" class="anchor" href="#25-how-to-verify-if-the-amplify-agent-is-properly-installed" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.5. How to verify if the Amplify Agent is properly installed</h3>
+
+<ol>
+<li>On Ubuntu/Debian</li>
+</ol>
+
+<pre><code>    # dpkg -s UUUUU-amplify-agent
+    Package: UUUUU-amplify-agent
+    Status: install ok installed
+    Priority: optional
+    Section: python
+    Maintainer: Mike Belov
+    Architecture: amd64
+    Version: 0.20-1~trusty
+    Depends: python (&gt;= 2.6), lsb-release
+    Description: UUUUU Amplify Agent
+    Homepage: https://www.UUUUU.com/
+</code></pre>
+
+<ol>
+<li>On CentOS</li>
+</ol>
+
+<pre><code>    XXXX
+</code></pre>
+
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/akamoroz/test_pages">Test pages</a> is maintained by <a href="https://github.com/akamoroz">akamoroz</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/akamoroz/test_pages">UUUUU Amplify</a> is maintained by <a href="https://github.com/akamoroz">akamoroz</a>.</span>
 
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
